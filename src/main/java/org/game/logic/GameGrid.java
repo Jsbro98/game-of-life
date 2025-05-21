@@ -1,4 +1,4 @@
-package org.game;
+package org.game.logic;
 
 public class GameGrid {
   private final boolean[][] grid;
