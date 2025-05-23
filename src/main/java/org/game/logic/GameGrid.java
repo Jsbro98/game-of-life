@@ -1,10 +1,14 @@
 package org.game.logic;
 
-public class GameGrid {
+import javax.swing.*;
+import java.awt.*;
+
+public class GameGrid extends JPanel {
   private final boolean[][] grid;
 
-  public GameGrid(int width, int height) {
-    this.grid = new boolean[height][width];
+  public GameGrid(Dimension dim) {
+    this.grid = new boolean[dim.width][dim.height];
+    this.setPreferredSize(dim);
   }
 
   public Row getRow(int row) {
